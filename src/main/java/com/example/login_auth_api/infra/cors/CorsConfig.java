@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000")
+                .allowedOrigins("https://login-jwt-bice.vercel.app/")
                 .allowedMethods("GET", "POST", "DELETE", "PUT");
     }
 }
